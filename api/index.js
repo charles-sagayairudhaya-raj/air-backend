@@ -30,8 +30,7 @@ app.use(
 );
 
 // MongoDB Connection
-mongoose.connect(process.env.MONGO_URL);
-
+mongoose.connect("mongodb+srv://airbnb:airbnb@cluster0.xeixkz3.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 // Routes
 app.get("/api/test", (req, res) => {
   res.json("Testing Done..");
